@@ -7,7 +7,7 @@ import { TodoInput } from '../components/TodoInput';
 
 export function Home() {
   const [tasks, setTasks] = useState<Task[]>([]);
-
+  
   function handleAddTask(newTaskTitle: string) {
     const newTask = {
       id: new Date().getTime(),
